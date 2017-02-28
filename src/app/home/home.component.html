@@ -1,9 +1,9 @@
-<h1>Event Binding</h1>
+<h1>2 Way Binding</h1>
 <p>
   {{homeTitle}}
 </p>
-<ng-content></ng-content>
-<input [value]="myString">
-<input [required]="myBoolean" /><br>
-<button (click)="alertMe()">Click me</button>
-<button (click)="myAlert('Danger!')">Warning</button>
+<ng-content></ng-content><hr>
+<label for="name">Name: </label><input [(ngModel)]="ninja.name" />
+<label for="name">Belt: </label><input [(ngModel)]="ninja.belt" />
+<p>Name: {{ninja.name}}</p>
+<p>Belt: {{ninja.belt}}</p>

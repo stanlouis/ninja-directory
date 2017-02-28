@@ -8,17 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   homeTitle = 'Welcome to the ninja directory!';
-  myString = 'I like chicken';
-  myBoolean = true;
+  ninja = {
+    name: 'Yoshi',
+    belt: 'Black'
+  };
 
   constructor() { }
 
   ngOnInit() {
   }
-  alertMe() {
-    alert('I have been clicked!');
-  }
-  myAlert(val) {
-    alert(val);
-  }
+
 }
