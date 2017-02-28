@@ -18,4 +18,7 @@ export class HomeComponent implements OnInit {
   alertMe() {
     alert('I have been clicked!');
   }
+  myAlert(val) {
+    alert(val);
+  }
 }
