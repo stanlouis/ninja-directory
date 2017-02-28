@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   inputs: ['ninja'],
@@ -10,11 +10,6 @@ export class HomeComponent implements OnInit {
   homeTitle = 'Welcome to the ninja directory!';
   myString = 'I like chicken';
   myBoolean = true;
-  @Output() onYell = new EventEmitter();
-
-  fireYellEvent(e) {
-    this.onYell.emit(e);
-  }
 
   constructor() { }
 

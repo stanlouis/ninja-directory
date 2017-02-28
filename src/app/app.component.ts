@@ -9,12 +9,4 @@ import { Component, Input } from '@angular/core';
 export class AppComponent {
   title = 'Stan app works!';
   name = 'Ninja';
-  ninja = {
-    name: "Ryu",
-    belt: "Red"
-  };
-
-  yell(e){
-    alert("I am yelling");
-  }
 }
